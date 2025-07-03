@@ -95,7 +95,7 @@ class CEF_obj(object):
         #Delete all the stored information
         self.__init__()
         #Start parsing
-        with open(filepath, 'rU') as fin:
+        with open(filepath, 'r') as fin:
             # Read cef file first line
             self.header, self.row_attr, self.col_attr, self.rows,\
             self.cols, self.flags = fin.readline().rstrip('\n').split('\t')[1:7]
